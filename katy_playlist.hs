@@ -7,6 +7,11 @@ Run with Docker Compose: ./start.bash
 
 Run without Docker: ./katy_playlist.hs
 
+Requirements:
+  - GHC
+  - runhaskell
+  - hoauth2
+
 This program will prompt the user to authenticate with Google by copy and pasting the
 authentication URI into a web browser. The user also needs post the OAuth2 authentication
 code back into this program.
