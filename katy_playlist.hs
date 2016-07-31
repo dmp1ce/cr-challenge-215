@@ -74,8 +74,8 @@ $(deriveJSON defaultOptions ''YouTubeRequest)
 
 main :: IO ()
 main = do
-  putStrLn "You will be prompted to authenticate with Google so that a fabulous\
-           \Katy Perry playlist can be created on your YouTube account. You can\
+  putStrLn "You will be prompted to authenticate with Google so that a fabulous \
+           \Katy Perry playlist can be created on your YouTube account. You can \
            \press CTRL-C to stop at any time.\n\n\
            \Do you want to continue? (y\\n)"
   c <- getLine
