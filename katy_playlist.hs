@@ -123,6 +123,10 @@ main = do
 -- | oauthCallback = Just "https://developers.google.com/oauthplayground"
 googleKey :: OAuth2
 googleKey = OAuth2 { oauthClientId = "1009838644286-dkghf2jd5jm4o7mp87rg18qi60vloq69.apps.googleusercontent.com"
+                   -- Apparently Google OAuth2 secrets are OK in desktop apps?
+                   -- https://developers.google.com/identity/protocols/OAuth2InstalledApp
+                   -- "Unlike with web clients, the OAuth 2.0 client secret (if used) is
+                   --  assumed not to be confidential."
                    , oauthClientSecret = "onPYgzEHwwQairpO_ndoQKII"
                    , oauthCallback = Just "urn:ietf:wg:oauth:2.0:oob"
                    , oauthOAuthorizeEndpoint = "https://accounts.google.com/o/oauth2/auth"
